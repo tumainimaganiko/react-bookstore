@@ -1,9 +1,11 @@
-import BookState from "components/BookDetails";
+import BookDetails from "components/BookDetails";
 
 const Books = () => {
     return (
         <div>
-            <BookState/>
+            <BookDetails/>
+            <BookDetails/>
+            <BookDetails/>
         </div>
     )
 }
