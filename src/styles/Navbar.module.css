@@ -1,8 +1,7 @@
 .container {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    padding-left: 10%;
+    justify-content: space-around;
 }
 
 .container ul  {
@@ -17,4 +16,14 @@
 
 .link {
     text-decoration: none;
+}
+
+.icon {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 24px;
+}
+
+.color {
+    color: #0290ff;
 }
