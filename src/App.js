@@ -4,19 +4,17 @@ import Categories from 'components/Categories';
 import Navbar from 'components/Navbar';
 import './App.css';
 
-const Layout = () => {
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-    </>
-  )
-}
+const Layout = () => (
+  <>
+    <Navbar />
+    <Outlet />
+  </>
+);
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Books />}/>
+        <Route index element={<Books />} />
         <Route path="categories" element={<Categories />} />
       </Route>
     </Routes>
