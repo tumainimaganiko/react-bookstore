@@ -1,6 +1,7 @@
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Books from 'components/Books';
 import Categories from 'components/Categories';
+import Navbar from 'components/Navbar';
 import './App.css';
 
 const Layout = () => {
