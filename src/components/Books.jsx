@@ -1,4 +1,5 @@
 import BookDetails from "components/BookDetails";
+import AddBook from "components/AddBook";
 
 const Books = () => {
     return (
@@ -6,6 +7,7 @@ const Books = () => {
             <BookDetails/>
             <BookDetails/>
             <BookDetails/>
+            <AddBook />
         </div>
     )
 }
