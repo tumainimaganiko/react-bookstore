@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding-left: 10%;
+}
+
+.container ul  {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+}
+
+.container ul li {
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
