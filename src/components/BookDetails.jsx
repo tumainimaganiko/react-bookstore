@@ -8,9 +8,9 @@ const BookState = ({category, title, author, percentage}) => {
             <h3>{title}</h3>
             <p>{author}</p>
             <ul>
-                <li><Link to="comments">Comments</Link></li>
-                <li><Link to="remove">Remove</Link></li>
-                <li><Link to="edit">Edit</Link></li>
+                <li><Link to="">Comments</Link></li>
+                <li><Link to="">Remove</Link></li>
+                <li><Link to="">Edit</Link></li>
             </ul>
         </div>
         <div className={styles.progress}>
