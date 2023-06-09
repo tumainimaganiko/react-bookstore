@@ -6,7 +6,7 @@ const AddBook = () => (
     <form action="">
       <input type="text" placeholder="Book title" />
       <select name="" id="">
-        <option value="Category">Category</option>
+        <option value="Category">Tumaini Maganiko</option>
       </select>
       <button type="button">Add book</button>
     </form>
