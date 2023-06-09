@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from 'styles/BookDetails.module.css'
-const BookState = () => {
+const BookState = ({category, title, author, percentage}) => {
     return (
        <div className={styles.container}>
          <div className={styles.details}>
-            <h4>Action</h4>
-            <h3>The Hunger Games</h3>
-            <p>Suzanne Collins</p>
+            <h4>{category}</h4>
+            <h3>{title}</h3>
+            <p>{author}</p>
             <ul>
                 <li><Link to="comments">Comments</Link></li>
                 <li><Link to="remove">Remove</Link></li>
@@ -15,7 +15,7 @@ const BookState = () => {
         </div>
         <div className={styles.progress}>
             <div>
-                <h2>64%</h2>
+                <h2>{percentage}%</h2>
                 <p>completed</p>
             </div>
             <div className={styles.updateProgress}>
