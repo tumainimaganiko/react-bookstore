@@ -1,6 +1,9 @@
 const Categories = () => {
+    const heading = {
+        'text-align': 'center'
+    }
     return (
-        <h1>This is Category section</h1>
+        <h1 style={heading}>This is Category section</h1>
     )
 }
 
