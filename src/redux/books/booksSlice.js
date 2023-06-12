@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialstate = {
   books: [],
 };
 
 export const booksSlice = createSlice({
-  name: 'books',
+  name: "books",
   initialstate,
   reducers: {
     addBook: (state, action) => {
