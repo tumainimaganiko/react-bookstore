@@ -5,7 +5,7 @@ const initialstate = {
     books: []
 }
 
-export const books = createSlice({
+export const booksSlice = createSlice({
     name: books,
     initialstate,
     reducers: {
@@ -18,3 +18,7 @@ export const books = createSlice({
         }
     }
 })
+
+export const { addBook, removeBook } = booksSlice.actions;
+
+export default booksSlice.reducer;
