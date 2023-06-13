@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from 'redux/books/booksSlice';
 import styles from 'styles/BookDetails.module.css';
 
 const BookState = ({ item }) => {
   const {
-    category, title, author,
+    category, title, author, item_id,
   } = item;
+
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.container}>
       <div className={styles.details}>
@@ -12,9 +17,9 @@ const BookState = ({ item }) => {
         <h3>{title}</h3>
         <p>{author}</p>
         <ul>
-          <li><a href="/">Comments</a></li>
-          <li><a href="/">Remove</a></li>
-          <li><a href="/">Edit</a></li>
+          <li><button type="button">Comments</button></li>
+          <li><button type="button" onClick={() => dispatch(removeBook(item_id))}>Remove</button></li>
+          <li><button type="button">Edit</button></li>
         </ul>
       </div>
       <div className={styles.progress}>
