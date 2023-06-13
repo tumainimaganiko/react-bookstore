@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from 'redux/books/booksSlice';
 import styles from 'styles/BookDetails.module.css';
 
-const BookState = ({ item }) => {
-  const {
-    category, title, author, percentage,
-  } = item;
+const BookState = ({
+  category, title, author, id,
+}) => {
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.container}>
       <div className={styles.details}>
@@ -12,17 +15,22 @@ const BookState = ({ item }) => {
         <h3>{title}</h3>
         <p>{author}</p>
         <ul>
-          <li><a href="/">Comments</a></li>
-          <li><a href="/">Remove</a></li>
-          <li><a href="/">Edit</a></li>
+          <li>
+            <button type="button">Comments</button>
+          </li>
+          <li>
+            <button type="button" onClick={() => dispatch(removeBook(id))}>
+              Remove
+            </button>
+          </li>
+          <li>
+            <button type="button">Edit</button>
+          </li>
         </ul>
       </div>
       <div className={styles.progress}>
         <div>
-          <h2>
-            {percentage}
-            %
-          </h2>
+          <h2>80 %</h2>
           <p>completed</p>
         </div>
         <div className={styles.updateProgress}>
@@ -32,7 +40,6 @@ const BookState = ({ item }) => {
         </div>
       </div>
       {' '}
-
     </div>
   );
 };
@@ -40,10 +47,8 @@ const BookState = ({ item }) => {
 export default BookState;
 
 BookState.propTypes = {
-  item: PropTypes.shape({
-    category: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-    percentage: PropTypes.string.isRequired,
-  }).isRequired,
+  category: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
