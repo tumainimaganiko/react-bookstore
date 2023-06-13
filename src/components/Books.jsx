@@ -3,7 +3,7 @@ import BookState from 'components/BookState';
 import AddBook from 'components/AddBook';
 
 const Books = () => {
-  const { books } = useSelector(store => store.books)
+  const { books } = useSelector((store) => store.books);
   // const data = [
   //   {
   //     id: 1,
