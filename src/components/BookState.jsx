@@ -3,7 +3,7 @@ import styles from 'styles/BookDetails.module.css';
 
 const BookState = ({ item }) => {
   const {
-    category, title, author, percentage,
+    category, title, author,
   } = item;
   return (
     <div className={styles.container}>
@@ -20,7 +20,7 @@ const BookState = ({ item }) => {
       <div className={styles.progress}>
         <div>
           <h2>
-            {percentage}
+            80
             %
           </h2>
           <p>completed</p>
@@ -44,6 +44,5 @@ BookState.propTypes = {
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    percentage: PropTypes.string.isRequired,
   }).isRequired,
 };
