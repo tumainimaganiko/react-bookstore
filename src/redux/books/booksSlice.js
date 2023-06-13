@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  books: // Initial state:
-  [
+  // Initial state:
+  books: [
     {
       item_id: 'item1',
       title: 'The Great Gatsby',

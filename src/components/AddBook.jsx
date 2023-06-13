@@ -21,9 +21,14 @@ const AddBook = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (title && author) {
-      dispatch(addBook({
-        title, author, item_id: uuidv4(), category: 'Fiction',
-      }));
+      dispatch(
+        addBook({
+          title,
+          author,
+          item_id: uuidv4(),
+          category: 'Fiction',
+        }),
+      );
       setAuthor('');
       setTitle('');
     }
@@ -32,8 +37,22 @@ const AddBook = () => {
     <div className={styles.container}>
       <h3>ADD NEW BOOK</h3>
       <form onSubmit={handleFormSubmit}>
-        <input type="text" name="title" value={title} placeholder="Book title" onChange={handleTitle} required />
-        <input type="text" name="author" value={author} placeholder="Author" onChange={handleAuthor} required />
+        <input
+          type="text"
+          name="title"
+          value={title}
+          placeholder="Book title"
+          onChange={handleTitle}
+          required
+        />
+        <input
+          type="text"
+          name="author"
+          value={author}
+          placeholder="Author"
+          onChange={handleAuthor}
+          required
+        />
         <button type="submit">Add book</button>
       </form>
     </div>

@@ -7,11 +7,21 @@ const Navbar = () => (
     <div className={styles.display}>
       <h1 className={styles.color}>Bookstore CMS</h1>
       <ul>
-        <li><NavLink to="/" className={styles.link}>Books</NavLink></li>
-        <li><NavLink to="categories" className={styles.link}>Categories</NavLink></li>
+        <li>
+          <NavLink to="/" className={styles.link}>
+            Books
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="categories" className={styles.link}>
+            Categories
+          </NavLink>
+        </li>
       </ul>
     </div>
-    <div className={styles.icon}><FaUserAlt className={styles.color} /></div>
+    <div className={styles.icon}>
+      <FaUserAlt className={styles.color} />
+    </div>
   </div>
 );
 
