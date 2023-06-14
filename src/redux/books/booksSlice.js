@@ -4,7 +4,6 @@ import axios from 'axios';
 const initialState = {
   // Initial state:
   books: [],
-  sendBook: {},
 };
 
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
@@ -16,17 +15,16 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
   return data;
 });
 
-// export const createBook = createAsyncThunk('books/createBook', async (book) =>
-//  axios.post(`${baseUrl}/apps/${bookAppId}/books/`, book));
+export const createBook = createAsyncThunk('books/createBook', async (bookData, thunkAPI) => {
+  const response = await axios.post(`${baseUrl}/apps/${bookAppId}/books`, bookData);
+  thunkAPI.dispatch(fetchBooks());
+  return response;
+});
 
 export const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (state, action) => {
-      console.log(action.payload);
-      state.sendBook = action.payload;
-    },
     removeBook: (state, action) => {
       const bookId = action.payload;
       state.books = state.books.filter((item) => item.item_id !== bookId);
@@ -35,14 +33,11 @@ export const booksSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchBooks.fulfilled, (state, action) => {
       const myBooks = Object.keys(action.payload);
+      state.books = [];
       myBooks.forEach((item) => {
         state.books.push(action.payload[item][0]);
       });
     });
-    // builder.addCase(createBook.fulfilled, (state, action) => {
-    //   console.log(state.books);
-    //   state.books.push(action.payload);
-    // });
   },
 });
 
