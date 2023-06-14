@@ -6,8 +6,6 @@ import { useEffect } from 'react';
 
 const Books = () => {
   const { books } = useSelector((store) => store.books);
-  const myBooks = Object.keys(books);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -16,20 +14,17 @@ const Books = () => {
 
   return (
     <div>
-      {myBooks.map((item) => {
-        const book = books[item][0];
-        return (
-          <>
-            <BookState
-              key={item}
-              title={book.title}
-              category={book.category}
-              author={book.author}
-              id={item}
-            />
-          </>
-        );
-      })}
+      {books.map((item) => (
+        <>
+          <BookState
+            key={item.item_id}
+            title={item.title}
+            category={item.category}
+            author={item.author}
+            id={item.item_id}
+          />
+        </>
+      ))}
       <AddBook />
     </div>
   );
