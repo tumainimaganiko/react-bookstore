@@ -24,6 +24,8 @@ const initialState = {
   ],
 };
 
+const bookAppId = 'F8lEAiIWKPi2ccaNrDcs';
+
 export const booksSlice = createSlice({
   name: 'books',
   initialState,
