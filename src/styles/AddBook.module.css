@@ -9,6 +9,10 @@ form {
   margin: 0 10%;
 }
 
+input {
+  border:1px solid #c4c4c4;
+}
+
 input[type="text"]:nth-child(1) {
   width: 40%;
 }
@@ -16,6 +20,10 @@ input[type="text"]:nth-child(1) {
 
 input[type="text"]:nth-child(2) {
   width: 20%;
+}
+
+input::placeholder {
+  color: #c4c4c4;
 }
 
 form button {
