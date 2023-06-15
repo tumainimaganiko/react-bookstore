@@ -15,15 +15,15 @@ const Books = () => {
   return (
     <div>
       {books.map((item) => (
-        <>
-          <BookState
-            key={item.item_id}
-            title={item.title}
-            category={item.category}
-            author={item.author}
-            id={item.item_id}
-          />
-        </>
+
+        <BookState
+          key={item.item_id}
+          title={item.title}
+          category={item.category}
+          author={item.author}
+          id={item.item_id}
+        />
+
       ))}
       <AddBook />
     </div>
