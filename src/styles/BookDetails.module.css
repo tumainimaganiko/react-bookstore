@@ -49,14 +49,19 @@ p {
 .progress {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 60%;
+}
+
+.updateProgress {
+  width: 70%;
 }
 
 .updateProgress button {
   background-color: #0290ff;
   color: #fff;
   border: none;
-  padding: 5px;
+  /* width: 100%; */
+  padding: 5px 10px;
 }
 
 .updateProgress h3 {
@@ -78,7 +83,5 @@ p {
 .progressDiv {
   display: flex;
   width: 100%;
-
-  /* justify-content: space-around; */
   align-items: center;
 }
