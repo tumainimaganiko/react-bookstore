@@ -8,12 +8,12 @@ const Navbar = () => (
       <h1 className={styles.color}>Bookstore CMS</h1>
       <ul>
         <li>
-          <NavLink to="/" className={styles.link}>
+          <NavLink to="/" className={styles.bookLink}>
             Books
           </NavLink>
         </li>
         <li>
-          <NavLink to="categories" className={styles.link}>
+          <NavLink to="categories" className={styles.categoryLink}>
             Categories
           </NavLink>
         </li>
