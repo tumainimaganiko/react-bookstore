@@ -1,9 +1,11 @@
-import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { deleteBook } from "redux/books/booksSlice";
-import styles from "styles/BookDetails.module.css";
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { deleteBook } from 'redux/books/booksSlice';
+import styles from 'styles/BookDetails.module.css';
 
-const BookState = ({ category, title, author, id }) => {
+const BookState = ({
+  category, title, author, id,
+}) => {
   const dispatch = useDispatch();
 
   return (
@@ -36,7 +38,8 @@ const BookState = ({ category, title, author, id }) => {
           <h3>Chapter 17</h3>
           <button type="button">UPDATE PROGRESS</button>
         </div>
-      </div>{" "}
+      </div>
+      {' '}
     </div>
   );
 };
