@@ -1,20 +1,30 @@
 .container h3 {
-  padding-left: 140px;
+  color: #888;
+
+  /* padding-left: 140px; */
+  margin: 0 10%;
 }
 
 form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 10%;
 }
 
-input[type="text"] {
-  width: 50%;
-  margin: 0 10px;
+input {
+  border: 1px solid #c4c4c4;
 }
 
-select {
-  width: 18%;
-  margin: 0 20px;
+input[type="text"]:nth-child(1) {
+  width: 40%;
+}
+
+input[type="text"]:nth-child(2) {
+  width: 35%;
+}
+
+input::placeholder {
+  color: #c4c4c4;
 }
 
 form button {
@@ -22,4 +32,5 @@ form button {
   color: #fff;
   border: none;
   padding: 10px 30px;
+  width: 15%;
 }

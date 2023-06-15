@@ -53,7 +53,7 @@ const AddBook = () => {
           onChange={handleAuthor}
           required
         />
-        <button type="submit">Add book</button>
+        <button type="submit">ADD BOOK</button>
       </form>
     </div>
   );

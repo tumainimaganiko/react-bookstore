@@ -1,33 +1,21 @@
-<a name="readme-top"></a>
 
-
-<div align="center">
-    
-  <br/>
-
-  <h3><b>Tumaini Maganiko</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖  Bookstore Project ](#--bookstore-project-)
-  - [🛠 Built With ](#-built-with-)
-        - [Languages](#languages)
+- [📖 Book Store ](#-book-store-)
+  - [🛠 Built With](#-built-with)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Install](#install)
     - [Usage](#usage)
-    - [`npm start`](#npm-start)
     - [Run tests](#run-tests)
-  - [Deployment ](#deployment-)
-    - [`npm run build`](#npm-run-build)
-  - [👥 Author ](#-author-)
+  - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -36,84 +24,79 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖  Bookstore Project <a name="about-project"></a>
+# 📖 Book Store <a name="about-project"></a>
 
-## 🛠 Built With <a name="built-with"></a>
- ##### Languages
-1. React
-2. HTML 
-3. CSS
-4. JAVASCRIPT
+- This is BookStore App built with HTML, CSS and React this app used    for adding books or removing it like the store ,so you can add your favourite books to the app.
+
+## 🛠 Built With 
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="/index.html">HTML</a></li>
-    <li><a href="/styles.css">CSS</a></li>
-    <li><a href="/index.js">JAVASCRIPT</a></li>
+    <li><a href="#">HTML5</a></li>
+    <li><a href="#">CSS3</a></li>
+    <li><a href="#">REACT</a></li>
   </ul>
 </details>
-
-
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-
-- User can add a book.
+- **Responsive design**
+- **User interface friendly**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
-To get a local copy up and running, follow these steps.
+This could be used as a BookStore or any type of store.
 
 ### Prerequisites
 
-1. Web browser
-2. Code editor
-3. Git-smc
+In order to run this project you need:
+
+- A working Laptop
+- A code Editor
+- A browser
 
 ### Setup
 
+Clone this repository to your desired folder:
 
-To get a local copy up and running follow these simple example steps.
+To clone this repository on your machine run-
+
+```sh
+  git clone git@github.com:tumainimaganiko/react-bookstore.git
+  cd react-bookstore
+```
 
 
-- git clone https://github.com/tumainimaganiko/react-bookstore
-- cd react-bookstore
-- npm install
+### Install
 
+Install this project with:
 
+```sh
+ npm install
+```
 ### Usage
 
 To run the project, execute the following command:
-### `npm start`
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```
-  You may also see any lint errors in the console if you modify the code.
+```sh
+- Use `npm start` in terminal
 ```
 
 ### Run tests
 
-Coming soon
+To run tests, run the following command:
 
-
-## Deployment <a name="Deployment"></a>
-
-### `npm run build`
-
-```
-    Coming Soon
-```
+- `npx eslint "**/*.{js,jsx}"`
+- `npx stylelint "**/*.{css,scss}"`
 
 
 
@@ -121,40 +104,31 @@ Coming soon
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
+👤 **tumainimaganiko**
 
-👤 Tumaini Maganiko
-
-- GitHub: [@githubhandle](https://github.com/tumainimaganiko)
-- Twitter: [@twitterhandle](https://twitter.com/Chief2maini)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tumaini-maganiko-991b30262/)
-
+- GitHub: [Click here](https://github.com/tumainimaganiko)
+- Twitter: [Click here](https://twitter.com/Chief2maini)
+- LinkedIn: [Click here](https://www.linkedin.com/in/tumaini-maganiko-991b30262/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Display a list of books
-- Add a book
-- Remove a selected book
+- Test the app using RTL 
+- Add animations style
+- Add details page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b 'branchname'`)
-3. Commit your Changes (`git commit -m 'Add some branchname'`)
-4. Push to the Branch (`git push origin branchname`)
-5. Open a Pull Request
-
-Feel free to check the [issues page](../../issues/).
+Contributions, [issues](https://github.com/tumainimaganiko/react-bookstore/issues), and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,8 +136,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-If you like this project rate me star 
+If you like this project give it a rating.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,8 +144,7 @@ If you like this project rate me star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-I would like to thank Microverse for accelerating my growth
+- I would like to thank Microverse (microverse.org) for providing the resources and the knowledge to work on projects like this.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,6 +152,6 @@ I would like to thank Microverse for accelerating my growth
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/tumainimaganiko/react-bookstore/blob/bookstore-styling/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

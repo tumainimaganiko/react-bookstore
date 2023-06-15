@@ -16,22 +16,25 @@ const BookState = ({
         <p>{author}</p>
         <ul>
           <li>
-            <button type="button">Comments</button>
+            <button className={styles.line} type="button">Comments</button>
           </li>
           <li>
-            <button type="button" onClick={() => dispatch(deleteBook(id))}>
+            <button className={styles.line} type="button" onClick={() => dispatch(deleteBook(id))}>
               Remove
             </button>
           </li>
           <li>
-            <button type="button">Edit</button>
+            <button className={styles.button} type="button">Edit</button>
           </li>
         </ul>
       </div>
       <div className={styles.progress}>
-        <div>
-          <h2>80 %</h2>
-          <p>completed</p>
+        <div className={styles.progressDiv}>
+          <div className={styles.progressBar} />
+          <div>
+            <h2>80 %</h2>
+            <p>completed</p>
+          </div>
         </div>
         <div className={styles.updateProgress}>
           <h3>CURRENT CHAPTER</h3>
