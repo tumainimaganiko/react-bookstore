@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from 'redux/books/booksSlice';
 import styles from 'styles/AddBook.module.css';
+import { createBook } from 'redux/books/booksSlice';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
@@ -22,7 +22,7 @@ const AddBook = () => {
     e.preventDefault();
     if (title && author) {
       dispatch(
-        addBook({
+        createBook({
           title,
           author,
           item_id: uuidv4(),
