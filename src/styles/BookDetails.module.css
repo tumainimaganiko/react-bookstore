@@ -1,10 +1,14 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 1px solid gray;
   width: 80%;
   margin: 10px auto;
   padding: 10px 0;
+}
+
+.details {
+  padding-left: 20px;
 }
 
 .details h3,
@@ -53,14 +57,13 @@ p {
 }
 
 .updateProgress {
-  width: 70%;
+  width: 80%;
 }
 
 .updateProgress button {
   background-color: #0290ff;
   color: #fff;
   border: none;
-  /* width: 100%; */
   padding: 5px 10px;
 }
 
