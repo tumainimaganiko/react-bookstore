@@ -39,7 +39,7 @@ p {
 .progress {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
 }
 
 .updateProgress button {
@@ -55,4 +55,19 @@ p {
 
 .updateProgress h3:nth-child(2) {
   font-weight: 200;
+}
+
+.progressBar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid #0290ff;
+  margin: 20px;
+}
+
+.progressDiv {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-around; */
+  align-items: center;
 }
