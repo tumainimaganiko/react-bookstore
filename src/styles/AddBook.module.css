@@ -1,5 +1,5 @@
 .container h3 {
-  color: #888888;
+  color: #888;
   padding-left: 140px;
 }
 
@@ -10,13 +10,12 @@ form {
 }
 
 input {
-  border:1px solid #c4c4c4;
+  border: 1px solid #c4c4c4;
 }
 
 input[type="text"]:nth-child(1) {
   width: 40%;
 }
-
 
 input[type="text"]:nth-child(2) {
   width: 35%;
