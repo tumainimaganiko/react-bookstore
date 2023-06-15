@@ -18,6 +18,18 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
 export const createBook = createAsyncThunk('books/createBook', async (bookData, thunkAPI) => {
   const response = await axios.post(`${baseUrl}/apps/${bookAppId}/books`, bookData);
   thunkAPI.dispatch(fetchBooks());
+  const { cacheControl, contentLength, contentType } = response.headers;
+
+  return {
+    data: response.data,
+    cacheControl,
+    contentLength,
+    contentType,
+  };
+});
+
+export const deleteBook = createAsyncThunk('books/deleteBooks', async (bookId) => {
+  const response = await axios.delete(`${baseUrl}/apps/${bookAppId}/books/${bookId}`);
   return response;
 });
 
