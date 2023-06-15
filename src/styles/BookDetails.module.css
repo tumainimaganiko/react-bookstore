@@ -23,17 +23,27 @@ p {
   padding-left: 0;
 }
 
-.details ul li {
-  margin: 0 5px;
-}
-
 .details p {
   color: #4386bf;
 }
 
-.details a {
-  text-decoration: none;
+.line {
+  border-right: 3px solid #e9e9e9;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+
+.button {
+  border: none;
+}
+
+.details button {
+  background-color: transparent;
   color: #4386bf;
+  padding: 0;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .progress {

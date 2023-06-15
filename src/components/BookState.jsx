@@ -16,15 +16,15 @@ const BookState = ({
         <p>{author}</p>
         <ul>
           <li>
-            <button type="button">Comments</button>
+            <button className={styles.line} type="button">Comments</button>
           </li>
           <li>
-            <button type="button" onClick={() => dispatch(deleteBook(id))}>
+            <button className={styles.line} type="button" onClick={() => dispatch(deleteBook(id))}>
               Remove
             </button>
           </li>
           <li>
-            <button type="button">Edit</button>
+            <button className={styles.button} type="button">Edit</button>
           </li>
         </ul>
       </div>
